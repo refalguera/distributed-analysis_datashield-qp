@@ -21,16 +21,18 @@ mkdir /etc/dsqp/nginx
 mkdir -p $QP_DATA_DIR
 cp $QP_HOME_DIR/.env /etc/dsqp/.env
 cp $QP_HOME_DIR/docker-compose.yml /etc/dsqp/docker-compose.yml
-cp $QP_HOME_DIR/start.sh /etc/dsqp/start.sh
-cp $QP_HOME_DIR/stop.sh /etc/dsqp/stop.sh
+#cp $QP_HOME_DIR/start.sh /etc/dsqp/start.sh
+#cp $QP_HOME_DIR/stop.sh /etc/dsqp/stop.sh
 cp $QP_HOME_DIR/update.sh /etc/dsqp/update.sh
 cp -R $QP_HOME_DIR/auth/queue.pem /etc/dsqp/auth/queue.pem
+cp -R $QP_HOME_DIR/auth/queuecert.pem /etc/dsqp/auth/queuecert.pem
+cp -R $QP_HOME_DIR/auth/queuekey.pem /etc/dsqp/auth/queuekey.pem
 cp -R $QP_HOME_DIR/nginx/* /etc/dsqp/nginx
 
 printf "**** removing config files from home repository $QP_HOME_DIR...\n\n"
-rm $QP_HOME_DIR/.env
-rm -rf $QP_HOME_DIR/auth
-rm -rf $QP_HOME_DIR/nginx
+#rm $QP_HOME_DIR/.env
+#rm -rf $QP_HOME_DIR/auth
+#rm -rf $QP_HOME_DIR/nginx
 
 FILE=/etc/dsqp/nginx/dhparam.pem
 if [ ! -f "$FILE" ]; then

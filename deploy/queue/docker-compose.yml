@@ -30,6 +30,7 @@ services:
       - LOG_LEVEL=${LOG_LEVEL}
     networks:
       - queue_net
-
+    
+      
 networks:
   queue_net:

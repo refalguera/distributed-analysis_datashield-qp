@@ -1,7 +1,7 @@
 cd ca_cert
-rm *
+#rm *
 touch index.txt
 echo "01" >> serial
 
 cd ../do_cert
-rm -rf *
+#rm -rf *

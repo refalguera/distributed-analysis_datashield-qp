@@ -50,6 +50,6 @@ fi
 
 cd /etc/dsqp
 
-docker-compose up -d  
+docker-compose up  
 
 printf "\n - check if queue is running by typing 'docker ps' into the command line \n"

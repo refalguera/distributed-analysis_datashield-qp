@@ -54,4 +54,4 @@ commonName		= supplied
 subjectAltName = @alt_names
 
 [alt_names]
-DNS.1 = queue_server
+DNS.1 = queueserver

@@ -13,7 +13,7 @@ services:
       - ALLOWED_IPS=${ALLOWED_IPS}
     volumes:
       - /etc/dsqp/nginx/queuecert.pem:/etc/nginx/conf.d/queuecert.pem
-      - /etc/dsqp/nginx/queuekey.pem:/etc/nginx/conf.d/queuekey.pem
+      - /etc/dsqp/nginx/queuekey.pem:/etc/nginx/conf.d/queuekey.pem   
       - /etc/dsqp/nginx/dhparam.pem:/etc/nginx/dhparam.pem
       - /etc/dsqp/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
     

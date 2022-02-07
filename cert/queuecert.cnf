@@ -46,12 +46,12 @@ commonName		= supplied
 
 [ req_distinguished_name ]
  C                      = DE
- CN                     = queue_server
- O                      = queue_server
- OU                     = queue_server
+ CN                     = queueserver
+ O                      = queueserver
+ OU                     = queueserver
 
 [req_ext]
 subjectAltName = @alt_names
 
 [alt_names]
-DNS.1 = queue_server
+DNS.1 = queueserver

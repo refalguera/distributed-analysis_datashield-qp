@@ -45,9 +45,9 @@ commonName		= supplied
 
 [ req_distinguished_name ]
  C                      = DE
- CN                     = datashield_opal
- O                      = datashield_opal
- OU                     = datashield_opal
+ CN                     = pollopalserver
+ O                      = pollopalserver
+ OU                     = pollopalserver
 
 [alt_names]
-DNS.1 = datashield_opal
+DNS.1 = pollopalserver

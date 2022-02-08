@@ -41,17 +41,21 @@ commonName		= supplied
 [ req ]
  default_bits           = 4096
  distinguished_name     = req_distinguished_name
+ x509_extensions	= v3_req
  prompt                 = no
  req_extensions = req_ext
 
 [ req_distinguished_name ]
  C                      = DE
- CN                     = queue_server
- O                      = queue_server
- OU                     = queue_server
+ CN                     = queueserver
+ O                      = queueserver
+ OU                     = queueserver
 
 [req_ext]
 subjectAltName = @alt_names
 
+[v3_req]
+subjectAltName = @alt_names
+
 [alt_names]
-DNS.1 = queue_server
+IP.1 = 141.39.156.108

@@ -6,5 +6,5 @@ services:
     volumes:
       - ./testscript:/testscript
     environment:
-      - QUEUE_HOST=${QUEUE_HOST}
+      - QUEUE_HOST="https://141.39.156.108:443"
     command: bash -c "tail -f /dev/null" 

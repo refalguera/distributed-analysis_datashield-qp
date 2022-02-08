@@ -1,5 +1,5 @@
 #!/bin/bash
-OPAL_ADMIN_PASS=${OPAL_ADMINISTRATOR_PASSWORD:-"password"}
+OPAL_ADMIN_PASS=${OPAL_ADMINISTRATOR_PASSWORD:-"ansible"}
 
 OPAL_KEY=$(sed -E ':a;N;$!ba;s/\r{0,1}\n/\\n/g' opalkey.pem)
 OPAL_CERT=$(sed -E ':a;N;$!ba;s/\r{0,1}\n/\\n/g' opalcert.pem)

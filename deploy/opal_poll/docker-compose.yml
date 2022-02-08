@@ -37,22 +37,22 @@ services:
     networks:
       - opal_net
 
-  poll_server:
-    container_name: poll_server
-    restart: unless-stopped
-    image: docker.miracum.org/datashield_miracum/ds_poll:v0.9.1
-    environment:
-      - POLL_QUEUE_SERVER=${POLL_QUEUE_SERVER}
-      - POLL_OPAL_SERVER=${POLL_OPAL_SERVER}
-      - POLL_THREADS=${POLL_THREADS}
-      - CHECK_SERVER_CERT=${CHECK_SERVER_CERT}
-      - LOG_LEVEL=${LOG_LEVEL}
-    entrypoint: bash -c "tail -f /dev/null"
-    networks:
-      - opal_net
-    volumes:
-      - ${QP_DATA_DIR}/poll_logging:/home/dspoll/ds_poll/logging
-      - /etc/dsqp/auth:/auth
+        #poll_server:
+        #container_name: poll_server
+        #restart: unless-stopped
+        #image: docker.miracum.org/datashield_miracum/ds_poll:v0.9.1
+        #environment:
+        #- POLL_QUEUE_SERVER=${POLL_QUEUE_SERVER}
+        #- POLL_OPAL_SERVER=${POLL_OPAL_SERVER}
+        #- POLL_THREADS=${POLL_THREADS}
+        #- CHECK_SERVER_CERT=${CHECK_SERVER_CERT}
+        #- LOG_LEVEL=${LOG_LEVEL}
+        #entrypoint: bash -c "tail -f /dev/null"
+        #networks:
+        #- opal_net
+        #volumes:
+        #- ${QP_DATA_DIR}/poll_logging:/home/dspoll/ds_poll/logging
+        #- /etc/dsqp/auth:/auth
 
 networks:
   opal_net:

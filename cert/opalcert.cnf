@@ -41,7 +41,6 @@ commonName		= supplied
 [ req ]
  default_bits           = 4096
  distinguished_name     = req_distinguished_name
- x509_extensions	= v3_req
  prompt                 = no
 
 [ req_distinguished_name ]
@@ -50,8 +49,7 @@ commonName		= supplied
  O                      = pollopalserver
  OU                     = pollopalserver
 
-[v3_req]
-subjectAltName = @alt_names
 
 [alt_names]
+DNS.1 = pollopalserver.local
 IP.1 = 141.39.156.111

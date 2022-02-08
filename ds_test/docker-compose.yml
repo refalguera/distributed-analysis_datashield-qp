@@ -4,6 +4,7 @@ services:
     container_name: ds_test
     build: .
     volumes:
+      - ../../cert/ca_cert/ds_develop_ca.crt:/usr/local/share/ca-certificates/ds_develop_ca.crt
       - ./testscript:/testscript
     environment:
       - QUEUE_HOST="https://141.39.156.108:443"

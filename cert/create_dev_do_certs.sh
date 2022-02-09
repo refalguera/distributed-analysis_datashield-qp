@@ -2,7 +2,7 @@ echo "Generating Domain Certificates for each component"
 
 
 #!/bin/sh
-certnames=("queue" "opal")
+certnames=("queue" )
 
 for certname in "${certnames[@]}"; do
   CURRENT="do_cert/$certname"

@@ -39,19 +39,19 @@ commonName		= supplied
 
 ####################################################################
 [ req ]
- default_bits           = 2048
+ default_bits           = 4096
  distinguished_name     = req_distinguished_name
  prompt                 = no
  req_extensions = req_ext
 
 [ req_distinguished_name ]
  C                      = DE
- CN                     = queueserver
- O                      = queueserver
- OU                     = queueserver
+ CN                     = queue_server
+ O                      = queue_server
+ OU                     = queue_server
 
 [req_ext]
 subjectAltName = @alt_names
 
 [alt_names]
-DNS.1 = queueserver
+DNS.1 = queue_server

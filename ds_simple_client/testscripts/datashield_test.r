@@ -24,6 +24,7 @@ datashield.assign.table(connections, symbol = "D",
                         table = list(server1 = "test.CNSIM1"),
                         variables=list('LAB_GLUC','LAB_HDL'))
 
+print(datashield.erros())
 mean <- ds.mean(x = 'D$LAB_HDL', type = "combine", datasources = connections)
 print(mean)
 print(datashield.errors())

@@ -2,13 +2,13 @@
 library(dsBaseClient)
 library(DSOpal)
 
-queueHost=Sys.getenv("https://141.39.156.108:443")
+queueHost=Sys.getenv("http://queue_server:443")
 
 # The login data object is a data.frame
 builder <- DSI::newDSLoginBuilder()
 
-builder$append(server="server1", url="https://141.39.156.108:443",
-               user="test", password="test123")
+builder$append(server="server1", url="https://queue_server:443",
+             user="administrator", password="develop")
 
 logindata <- builder$build()
 

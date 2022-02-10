@@ -20,7 +20,6 @@ services:
     - ./ds_data/auth:/auth
     - ../cert/do_cert/opal.key:/opt/opal/auth/opalkey.pem
     - ../cert/do_cert/opal.crt:/opt/opal/auth/opalcert.pem
-    - ../../cert/ca_cert/ds_develop_ca.crt:/usr/local/share/ca-certificates/ds_develop_ca.crt
   mongo:
     container_name: datashield_mongo
     image: mongo

@@ -39,17 +39,17 @@ commonName		= supplied
 
 ####################################################################
 [ req ]
- default_bits           = 2048
+ default_bits           = 4096
  distinguished_name     = req_distinguished_name
  prompt                 = no
 
 [ req_distinguished_name ]
  C                      = DE
- CN                     = pollopalserver
- O                      = pollopalserver
- OU                     = pollopalserver
+ CN                     = datashield_opal
+ O                      = datashield_opal
+ OU                     = datashield_opal
 
 
 [alt_names]
-DNS.1 = pollopalserver
+DNS.1 = datashield_opal
 
